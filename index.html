@@ -8,12 +8,118 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+
 </head>
 <body>
+<header>
+    <div class="container">
+        <div class="row justify-content-center py-3">
+    <div class="col-md-10 d-flex justify-content-between">
+        <div>
+        <img class="header-logo" src="assets/img/logo_max_home.png">
+    </div>
+        <div class="d-flex align-items-center">
+        <img class="mr-2 header-cal" src="assets/img/phone-call-svgrepo-com.svg" style="max-width: 20px;">
+        <span class="font-weight-bold txt-clr f-1 f-sm-1"> <a class="txt-clr header-ph-link" href="tel:01244781006">01244781006</a></span>
+    </div> 
+    </div>
     
+            
+        </div>
+    </div>
+</header>   
+<section class="section-banner">
+    <div class="col-lg-7">
+
+    </div>
+    <div class="col-lg-5">
+        <form action="https://maxathome.in/offers/home-sample-collection/thank-you.php" method="post">
+            <h3 class="text-uppercase text-center font-weight-bold txt-clr f-15 mb-3">ENQUIRE NOW</h3>
+            <div class="form-group">
+             
+              <input type="text" class="form-control" placeholder="Full Name" id="fname" name="c_name" required="">
+            </div>
+            <div class="form-group">
+             
+              <input type="email" class="form-control" placeholder="Email" id="email" name="c_email" required="">
+            </div>
+            <div class="form-group">
+             
+                <input type="number" class="form-control" placeholder="Phone" maxlength="10" id="phone" name="c_phone" required="">
+              </div>
+              
+              <div class="form-group">
+                
+                <select class="form-control" id="city" name="c_city" required="">
+                    <option value="">Select City</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Gurgaon">Gurgaon</option>
+                    <option value="Noida">Noida</option>
+                  
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <select class="form-control" id="sel1" name="c_lab_test" required="">
+                    <option value="">Select Lab Test</option>
+                    <option value="WTSPM">WellWise Tax Saver Profile - Male</option>
+                    <option value="WTSPF">WellWise Tax Saver Profile - Female</option>
+                    <option value="WWTP">WellWise Total Profile</option>
+                    <option value="WWEP">WellWise Essential Profile</option>
+                    <option value="WWAP">WellWise Advanced Profile</option>
+                    <option value="MVPB"> Max - Vitamine Panel Tests (basic)</option>
+                    <option value="OTHERS">Some Other Test</option>
+                    <option value="SFT">Swine Flu Test</option>
+                    <option value="LP"> Lipid Profile</option>
+                    <option value="PSA">Prostate-Specific Antigen (PSA)</option>
+                    <option value="WWEPM"> WellWise Exclusive Profile – Male</option>
+                    <option value="WWEPF"> WellWise Exclusive Profile – Female</option>
+                    <option value="MFPB">Max Fever Panel (Basic)</option>
+                    <option value="MFPC">Max Fever Panel (Comprehensive)</option>
+                    <option value="MDCP">Max Dengue/chikungunya Panel</option>
+                    <option value="CBC">CBC (Complete Blood Count)</option>
+                    <option value="MDP">Max Dengue Panel</option>
+                    <option value="LFT">Liver Function Test</option>
+                    <option value="MCP">Max Chikungunya Panel</option>
+                    <option value="MFP">Max Fever Panel (Fever &gt; 1 Week)</option>
+                    <option value="MFPO">Max Fever Of Unknown Origin Panel (Fever &gt; 3 Weeks)</option>
+                    <option value="MAWP">Max Adolescent Wellness Profile</option>
+                    <option value="MBP">Max Bone Profile</option>
+                    <option value="MCARP">Max Cardiac Profile</option>
+                    <option value="DSP">Diabetes Screening Profile</option>
+                    <option value="DSP2">Diabetes Screening Profile 2</option>
+                    <option value="MDP1">Max Diabetes Profile</option>
+                    <option value="MDEP">Max Diabetes Extended Profile</option>
+                    <option value="MNP">Max Nutrition Profile</option>
+                    <option value="MEP">Max Electrolyte Panel</option>
+                    <option value="MKHPC">Max Kidney Health Profile- Comprehensive</option>
+                    <option value="MCS">Max Cervical Screening</option>
+                    <option value="Others">Others</option>
+
+                </select>
+              </div>
+      
+      
+              <!-- <div class="form-group">
+               
+                <textarea class="form-control" placeholder="Write your query here" rows="2" id="comment"></textarea>
+              </div> -->
+            <div class="form-group form-check">
+              <label class="form-check-label txt-clr lh-1_2 font-weight-bold  f-9">
+                <input checked="" class="form-check-input" name="call_me" value="I authorize Max@Home representative to contact/whatsapp me. I understand that this will override the DND status on my mobile number." type="checkbox"> I authorize Max@Home representative to contact/whatsapp me. I understand that this will override the DND status on my mobile number.*
+              </label>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-sm f-15  bg-clr text-white w-100 text-uppercase">Submit</button>
+            </div>
+           
+          </form>
+    </div>
+</section>
 <!-- Why-Choose -->
 <section class="why-choose py-5">
 <div class="container">
@@ -54,8 +160,19 @@
     </div>
 </div>
 </section>
+   
+
+
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+
+    </script>
 </body>
 </html>
