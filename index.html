@@ -8,120 +8,294 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        section{
+            padding: 30px 0;
+        }
+        .section-banner{
+            background-blend-mode: multiply;
+            background-color: white;
+            background-size: cover;
+        }
+        #enquiry {
+            padding: 30px;
+            /* margin: 1em; */
+            border-radius: 1em;
+            text-align: center;
+            background: white;
+            color: rgba(0,0,0,0.75);
+            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+        }
+        #enquiry .form-group input,   #enquiry .form-group select {
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            padding: 5px 10px;
+            border: 2px solid #ECF0F1;
+            transition: border ease 500ms;
+            border-radius: 1ex;
+            background: #ECF0F1;
+            color: #181818;
+            height: 40px;
+        }
+        #enquiry .form-group select {
+            color: #777;
+        }
+        #enquiry .form-check-label{
+            font-size: 12px;
+            position: relative;
+            padding-left: 10px;
+            text-align: left;
+        }
+                #enquiry .form-group select option:not(:first-of-type) {
+             color: black;
+        }
+        #enquiry .form-group input:focus {
+            outline: none;
+            border: 2px solid #3498DB;
+        }
+        #enquiry .form-check-input{
+            position: absolute;
+            left: 0;
+            width: 25px !important;
+            top: -10px;
+        }
+        .first {
+        background-color: #00bcd4;
+        position: relative;
+        left: -40px;
+        color: #fff;
+        font-weight: bold;
+        }
+        .first {
+        width: 200px;
+        padding: 10px 0;
+        font-size: 20px;
+        }
 
+        .first::after {
+        content: "";
+        height: 100%;
+        width: 10px;
+        position: absolute;
+        right: -6px;
+        top: 0;
+        background-color: #196d78;
+        transform: skew(10deg);
+        }
+
+        .first::before,
+        h2::after,
+        h2::before {
+        content: "";
+        border: 10px solid;
+        border-color: #196d78 #196d78 transparent transparent;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        }
+        .btn-1{
+            
+            background: #013975;
+            height: 40px;
+            transition: all 0.4s;
+
+        }
+        .btn-1:hover{
+            outline: 1px solid #013975;
+            color: #013975;
+            background: #fff;
+            height: 40px;
+
+        }
+        .swiper-slide ul{
+            
+            list-style: none;
+        }
+        .swiper-slide ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 5px;
+        }
+        .swiper-slide ul li::before {
+            font-family: "Font Awesome 5 Pro";
+            content: "\f058";
+            position: absolute;
+            left: 0;
+            top: -4px;
+            font-size: 22px;
+            color: #00bcd4;
+            font-weight: 500;
+        }
+   
+        h2.text-style {
+    font-size: 20px;
+    font-weight: 700;
+}
+h2.text-style span{
+    color:#013975;
+}
+
+
+    </style>
 </head>
 <body>
 <header>
     <div class="container">
         <div class="row justify-content-center py-3">
-    <div class="col-md-10 d-flex justify-content-between">
-        <div>
-        <img class="header-logo" src="assets/img/logo_max_home.png">
-    </div>
-        <div class="d-flex align-items-center">
-        <img class="mr-2 header-cal" src="assets/img/phone-call-svgrepo-com.svg" style="max-width: 20px;">
-        <span class="font-weight-bold txt-clr f-1 f-sm-1"> <a class="txt-clr header-ph-link" href="tel:01244781006">01244781006</a></span>
-    </div> 
-    </div>
+            <div class="col-md-10 d-flex justify-content-between">
+                <div>
+                <img class="header-logo" src="assets/img/logo_max_home.png">
+            </div>
+                <div class="d-flex align-items-center">
+                    <img class="mr-2 header-cal" src="assets/img/phone-call-svgrepo-com.svg" style="max-width: 20px;">
+                    <span class="font-weight-bold txt-clr f-1 f-sm-1"> <a class="txt-clr header-ph-link" href="tel:01244781006">01244781006</a></span>
+                </div> 
+            </div>
     
             
         </div>
     </div>
 </header>   
-<section class="section-banner">
-    <div class="col-lg-7">
-
-    </div>
-    <div class="col-lg-5">
-        <form action="https://maxathome.in/offers/home-sample-collection/thank-you.php" method="post">
-            <h3 class="text-uppercase text-center font-weight-bold txt-clr f-15 mb-3">ENQUIRE NOW</h3>
-            <div class="form-group">
-             
-              <input type="text" class="form-control" placeholder="Full Name" id="fname" name="c_name" required="">
-            </div>
-            <div class="form-group">
-             
-              <input type="email" class="form-control" placeholder="Email" id="email" name="c_email" required="">
-            </div>
-            <div class="form-group">
-             
-                <input type="number" class="form-control" placeholder="Phone" maxlength="10" id="phone" name="c_phone" required="">
-              </div>
-              
-              <div class="form-group">
-                
-                <select class="form-control" id="city" name="c_city" required="">
-                    <option value="">Select City</option>
-                    <option value="Delhi">Delhi</option>
-                    <option value="Gurgaon">Gurgaon</option>
-                    <option value="Noida">Noida</option>
-                  
-                </select>
-              </div>
-              
-              <div class="form-group">
-                <select class="form-control" id="sel1" name="c_lab_test" required="">
-                    <option value="">Select Lab Test</option>
-                    <option value="WTSPM">WellWise Tax Saver Profile - Male</option>
-                    <option value="WTSPF">WellWise Tax Saver Profile - Female</option>
-                    <option value="WWTP">WellWise Total Profile</option>
-                    <option value="WWEP">WellWise Essential Profile</option>
-                    <option value="WWAP">WellWise Advanced Profile</option>
-                    <option value="MVPB"> Max - Vitamine Panel Tests (basic)</option>
-                    <option value="OTHERS">Some Other Test</option>
-                    <option value="SFT">Swine Flu Test</option>
-                    <option value="LP"> Lipid Profile</option>
-                    <option value="PSA">Prostate-Specific Antigen (PSA)</option>
-                    <option value="WWEPM"> WellWise Exclusive Profile – Male</option>
-                    <option value="WWEPF"> WellWise Exclusive Profile – Female</option>
-                    <option value="MFPB">Max Fever Panel (Basic)</option>
-                    <option value="MFPC">Max Fever Panel (Comprehensive)</option>
-                    <option value="MDCP">Max Dengue/chikungunya Panel</option>
-                    <option value="CBC">CBC (Complete Blood Count)</option>
-                    <option value="MDP">Max Dengue Panel</option>
-                    <option value="LFT">Liver Function Test</option>
-                    <option value="MCP">Max Chikungunya Panel</option>
-                    <option value="MFP">Max Fever Panel (Fever &gt; 1 Week)</option>
-                    <option value="MFPO">Max Fever Of Unknown Origin Panel (Fever &gt; 3 Weeks)</option>
-                    <option value="MAWP">Max Adolescent Wellness Profile</option>
-                    <option value="MBP">Max Bone Profile</option>
-                    <option value="MCARP">Max Cardiac Profile</option>
-                    <option value="DSP">Diabetes Screening Profile</option>
-                    <option value="DSP2">Diabetes Screening Profile 2</option>
-                    <option value="MDP1">Max Diabetes Profile</option>
-                    <option value="MDEP">Max Diabetes Extended Profile</option>
-                    <option value="MNP">Max Nutrition Profile</option>
-                    <option value="MEP">Max Electrolyte Panel</option>
-                    <option value="MKHPC">Max Kidney Health Profile- Comprehensive</option>
-                    <option value="MCS">Max Cervical Screening</option>
-                    <option value="Others">Others</option>
-
-                </select>
-              </div>
-      
-      
-              <!-- <div class="form-group">
+<section class="section-banner" style="background-image: url(assets/img/—Pngtree—white\ and\ blue\ color\ abstract_1448491.png);" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h2 class=" text-style  text-white   text f-20 f-sm-17 mb-0 mt-md-4 mt-2">Get comprehensive Health Checks done at the convenience and
+                                comfort of your home by <span> MAX@HOME </span></h2>
+                            <p  class="text-white  f-30  f-sm-20 lh-1_2 mt-2 mb-2 mb-md-2"><b> Buy 1  and get 2nd Profile FREE</b></p>
+                            <ul class="text-white f-15 f-sm-13 pl-0">
+                                <li>Report Review by Doctor over call</li>
+                                <li>Free Home sample collection</li>
+                                <li>Reports over secured web portal and email</li>
+                            
+                            </ul>   
+                        </div>
+                      
+                        <img src="https://maxathome.in/offers/home-sample-collection/assets2/img/slider-1.png" class="img-fluid" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h2 class=" text-style text-white    text f-20 f-sm-17 mb-0 mt-md-4 mt-2">Say goodbye to waiting lines.</h2>
+                            <p  class="text-white  f-30  f-sm-20 lh-1_2 mt-2 mb-2 mb-md-2"><b> Max@Home brings X-ray and ECG screening facility <br> directly to your doorsteps. </b></p>
+    
+                        </div>
+                      
+                        <img src="https://maxathome.in/offers/home-sample-collection/assets2/img/Xray.png" class="img-fluid" alt="">
+                      </div>
                
-                <textarea class="form-control" placeholder="Write your query here" rows="2" id="comment"></textarea>
-              </div> -->
-            <div class="form-group form-check">
-              <label class="form-check-label txt-clr lh-1_2 font-weight-bold  f-9">
-                <input checked="" class="form-check-input" name="call_me" value="I authorize Max@Home representative to contact/whatsapp me. I understand that this will override the DND status on my mobile number." type="checkbox"> I authorize Max@Home representative to contact/whatsapp me. I understand that this will override the DND status on my mobile number.*
-              </label>
+                   
+                    </div>
+              
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                  
+                  </div>
             </div>
-            <div class="d-flex justify-content-center">
-              <button type="submit" class="btn btn-sm f-15  bg-clr text-white w-100 text-uppercase">Submit</button>
+            <div class="col-lg-4">
+                <form action="https://maxathome.in/offers/home-sample-collection/thank-you.php" method="post" id="enquiry">
+                    <h3 class=" first text-uppercase text-center font-weight-bold txt-clr f-15 mb-3">ENQUIRE NOW</h3>
+                    <div class="form-group">
+                     
+                      <input type="text" class="form-control" placeholder="Full Name" id="fname" name="c_name" required="">
+                    </div>
+                    <div class="form-group">
+                     
+                      <input type="email" class="form-control" placeholder="Email" id="email" name="c_email" required="">
+                    </div>
+                    <div class="form-group">
+                     
+                        <input type="number" class="form-control" placeholder="Phone" maxlength="10" id="phone" name="c_phone" required="">
+                      </div>
+                      
+                      <div class="form-group">
+                        
+                        <select class="form-control" id="city" name="c_city" required="">
+                            <option value="">Select City</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Gurgaon">Gurgaon</option>
+                            <option value="Noida">Noida</option>
+                          
+                        </select>
+                      </div>
+                      
+                      <div class="form-group">
+                        <select class="form-control" id="sel1" name="c_lab_test" required="">
+                            <option value="">Select Lab Test</option>
+                            <option value="WTSPM">WellWise Tax Saver Profile - Male</option>
+                            <option value="WTSPF">WellWise Tax Saver Profile - Female</option>
+                            <option value="WWTP">WellWise Total Profile</option>
+                            <option value="WWEP">WellWise Essential Profile</option>
+                            <option value="WWAP">WellWise Advanced Profile</option>
+                            <option value="MVPB"> Max - Vitamine Panel Tests (basic)</option>
+                            <option value="OTHERS">Some Other Test</option>
+                            <option value="SFT">Swine Flu Test</option>
+                            <option value="LP"> Lipid Profile</option>
+                            <option value="PSA">Prostate-Specific Antigen (PSA)</option>
+                            <option value="WWEPM"> WellWise Exclusive Profile – Male</option>
+                            <option value="WWEPF"> WellWise Exclusive Profile – Female</option>
+                            <option value="MFPB">Max Fever Panel (Basic)</option>
+                            <option value="MFPC">Max Fever Panel (Comprehensive)</option>
+                            <option value="MDCP">Max Dengue/chikungunya Panel</option>
+                            <option value="CBC">CBC (Complete Blood Count)</option>
+                            <option value="MDP">Max Dengue Panel</option>
+                            <option value="LFT">Liver Function Test</option>
+                            <option value="MCP">Max Chikungunya Panel</option>
+                            <option value="MFP">Max Fever Panel (Fever &gt; 1 Week)</option>
+                            <option value="MFPO">Max Fever Of Unknown Origin Panel (Fever &gt; 3 Weeks)</option>
+                            <option value="MAWP">Max Adolescent Wellness Profile</option>
+                            <option value="MBP">Max Bone Profile</option>
+                            <option value="MCARP">Max Cardiac Profile</option>
+                            <option value="DSP">Diabetes Screening Profile</option>
+                            <option value="DSP2">Diabetes Screening Profile 2</option>
+                            <option value="MDP1">Max Diabetes Profile</option>
+                            <option value="MDEP">Max Diabetes Extended Profile</option>
+                            <option value="MNP">Max Nutrition Profile</option>
+                            <option value="MEP">Max Electrolyte Panel</option>
+                            <option value="MKHPC">Max Kidney Health Profile- Comprehensive</option>
+                            <option value="MCS">Max Cervical Screening</option>
+                            <option value="Others">Others</option>
+        
+                        </select>
+                      </div>
+              
+              
+                      <!-- <div class="form-group">
+                       
+                        <textarea class="form-control" placeholder="Write your query here" rows="2" id="comment"></textarea>
+                      </div> -->
+                    <div class="form-group form-check">
+                      <label class="form-check-label txt-clr lh-1_2 font-weight-bold  f-9 d-flex">
+                        <input checked="" class="form-check-input" name="call_me" value="I authorize Max@Home representative to contact/whatsapp me. I understand that this will override the DND status on my mobile number." type="checkbox">
+                         I authorize Max@Home representative to contact/whatsapp me. I understand that this will override the DND status on my mobile number.*
+                      </label>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                     
+                      <button type="submit" class="btn btn-sm f-15 btn-1  bg-clr text-white w-100 hover-filled-slide-right text-uppercase"> <span>Submit</span> </button>
+                    </div>
+                   
+                  </form>
             </div>
-           
-          </form>
+        </div>
     </div>
+
 </section>
 
 
@@ -226,10 +400,36 @@
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/aos.js"></script>
 
     <script>
+        $(document).ready(function() {
+        // Swiper: Slider
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+               
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+        });
+
         AOS.init({
             duration: 1200,
         })
