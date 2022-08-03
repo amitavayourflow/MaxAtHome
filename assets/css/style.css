@@ -27,7 +27,7 @@ body{
 .section-title h3 {
     font-size: 28px;
     margin-bottom: 8px;
-    margin-top: -5px;
+    margin-top: 0;
 }
 
 .section-title span {
@@ -55,6 +55,7 @@ body{
     -ms-transition: 0.3s;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    min-height: 200px;
 }
 
 .single-services::before {
@@ -78,26 +79,17 @@ body{
 }
 
 
-.icofont-surgeon:before {
-    content: "\ec36";
-}
-
-.single-services i {
-    font-size: 40px;
-    color: #0075ff;
-}
-
 .single-services h3 {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 12px;
 }
 
-p {
-    margin-top: 0;
+.single-services p{
+    margin-top: 5px;
     margin-bottom: 0;
     color: #6f8ba4;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.8;
 }
 
@@ -107,7 +99,7 @@ p {
     border-radius: 0;
 }
 
-.single-services h3, .single-services i, .single-services p {
+.single-services h3, .single-services img, .single-services p {
     position: relative;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
@@ -116,6 +108,29 @@ p {
     transition: 0.3s;
 }
 
-.single-services:hover h3, .single-services:hover i, .single-services:hover p {
+.single-services:hover h3, .single-services:hover img, .single-services:hover p {
     color: #fff;
+}
+
+.single-services:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    border-radius: 0;
+}
+
+.footer{
+    background-color: #f4f5f7;
+}
+
+.footer-pills a{
+    list-style: none;
+    border: 1px solid rgb(0 0 0 / 20%);
+    border-radius: 13px;
+    padding: 3px 12px 5px;
+    font-size: 12px;
+    line-height: 1;
+    text-decoration: none;
+    color: #555f51;
+    white-space: nowrap;
+    margin-bottom: 7px;
 }
