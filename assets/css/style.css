@@ -266,7 +266,7 @@ color:#013975;
     list-style: none;
 }
 
-.footer-pills ul li{
+.footer-pills ul li {
     border: 1px solid rgb(0 0 0 / 20%);
     border-radius: 8px;
     padding: 5px 10px;
@@ -277,8 +277,12 @@ color:#013975;
     margin-bottom: 10px;
     font-weight: 700;
     display: inline-flex;
-}
+    cursor: pointer;
 
+}
+.footer-pills ul li:hover {   
+     background: linear-gradient(to right, #0072ff, #00c6ff);
+    color: white;}
 .footer-copyright {
     background-color: #014382;
 }
