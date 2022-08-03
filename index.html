@@ -16,149 +16,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-        section{
-            padding: 30px 0;
-        }
-        .section-banner{
-            background-blend-mode: multiply;
-            background-color: white;
-            background-size: cover;
-        }
-        #enquiry {
-            padding: 30px;
-            /* margin: 1em; */
-            border-radius: 1em;
-            text-align: center;
-            background: white;
-            color: rgba(0,0,0,0.75);
-            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
-        }
-        #enquiry .form-group input,   #enquiry .form-group select {
-            display: block;
-            width: 100%;
-            font-size: 16px;
-            padding: 5px 10px;
-            border: 2px solid #ECF0F1;
-            transition: border ease 500ms;
-            border-radius: 1ex;
-            background: #ECF0F1;
-            color: #181818;
-            height: 40px;
-        }
-        #enquiry .form-group select {
-            color: #777;
-        }
-        #enquiry .form-check-label{
-            font-size: 12px;
-            position: relative;
-            padding-left: 10px;
-            text-align: left;
-        }
-                #enquiry .form-group select option:not(:first-of-type) {
-             color: black;
-        }
-        #enquiry .form-group input:focus {
-            outline: none;
-            border: 2px solid #3498DB;
-        }
-        #enquiry .form-check-input{
-            position: absolute;
-            left: 0;
-            width: 25px !important;
-            top: -10px;
-        }
-        .first {
-        background-color: #00bcd4;
-        position: relative;
-        left: -40px;
-        color: #fff;
-        font-weight: bold;
-        }
-        .first {
-        width: 200px;
-        padding: 10px 0;
-        font-size: 20px;
-        }
 
-        .first::after {
-        content: "";
-        height: 100%;
-        width: 10px;
-        position: absolute;
-        right: -6px;
-        top: 0;
-        background-color: #196d78;
-        transform: skew(10deg);
-        }
-
-        .first::before,
-        h2::after,
-        h2::before {
-        content: "";
-        border: 10px solid;
-        border-color: #196d78 #196d78 transparent transparent;
-        position: absolute;
-        left: 0;
-        bottom: -20px;
-        }
-        .btn-1{
-            
-            background: #013975;
-            height: 40px;
-            transition: all 0.4s;
-
-        }
-        .btn-1:hover{
-            outline: 1px solid #013975;
-            color: #013975;
-            background: #fff;
-            height: 40px;
-
-        }
-        .swiper-slide ul{
-            
-            list-style: none;
-        }
-        .swiper-slide ul li {
-            position: relative;
-            padding-left: 30px;
-            margin-bottom: 5px;
-        }
-        .swiper-slide ul li::before {
-            font-family: "Font Awesome 5 Pro";
-            content: "\f058";
-            position: absolute;
-            left: 0;
-            top: -4px;
-            font-size: 22px;
-            color: #00bcd4;
-            font-weight: 500;
-        }
-   
-        h2.text-style {
-    font-size: 20px;
-    font-weight: 700;
-}
-h2.text-style span{
-    color:#013975;
-}
-
-
-    </style>
 </head>
 <body>
 <header>
     <div class="container">
-        <div class="row justify-content-center py-3">
-            <div class="col-md-10 d-flex justify-content-between">
-                <div>
-                <img class="header-logo" src="assets/img/logo_max_home.png">
-            </div>
-                <div class="d-flex align-items-center">
-                    <img class="mr-2 header-cal" src="assets/img/phone-call-svgrepo-com.svg" style="max-width: 20px;">
-                    <span class="font-weight-bold txt-clr f-1 f-sm-1"> <a class="txt-clr header-ph-link" href="tel:01244781006">01244781006</a></span>
-                </div> 
+        <div class="row  py-3">
+                <div class="col-12 ">
+                    <div class="d-flex justify-content-between mr-4">
+                        <div class="navbar-brand">
+                            <img class="header-logo" src="assets/img/logo_max_home.png">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img class="mr-2 header-cal" src="assets/img/phone-call-svgrepo-com.svg" style="max-width: 20px;">
+                            <span class="font-weight-bold txt-clr f-1 f-sm-1"> <a class="txt-clr header-ph-link" href="tel:01244781006">01244781006</a></span>
+                        </div> 
+                    </div>
+                 
+                    
+                
+                </div>
+               
             </div>
     
             
@@ -374,12 +252,12 @@ h2.text-style span{
 <footer class="footer pt-5">
 <div class="container">
 <div class="row">
-    <div class="col-md-6 text-left">
+    <div class="col-md-7 text-left">
         <div class="footer-img">
             <img src="assets/img/logo-2.png" alt="">
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-5">
         <div class="footer-pills">
             <ul>
                 <li>Bone Test</li>
@@ -391,12 +269,6 @@ h2.text-style span{
                 <li>Blood Test at Home</li>
                 <li>HPV Test</li>
                 <li>Cervical Test</li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="footer-pills">
-            <ul>
                 <li>Dengue chikungunya Test</li>
                 <li>Chikungunya fever</li>
                 <li>Dengue Treatment</li>
@@ -409,6 +281,7 @@ h2.text-style span{
             </ul>
         </div>
     </div>
+   
 </div>
 </div>
 <div class="footer-copyright py-2">
