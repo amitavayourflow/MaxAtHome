@@ -54,6 +54,7 @@ p, span, h2, h3, h4, h5, h6, li, strong{
     position: relative;
     padding-left: 10px;
     text-align: left;
+    font-weight: 500;
 }
         #enquiry .form-group select option:not(:first-of-type) {
      color: black;
