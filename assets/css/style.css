@@ -73,7 +73,7 @@ p, span, h2, h3, h4, h5, h6, li, strong{
 .first {
 background-color: #00bcd4;
 position: relative;
-left: -40px;
+left: -50px;
 color: #fff;
 font-weight: bold;
 }
@@ -329,38 +329,57 @@ color:#013975;
 /* =================
  wellness-package 
  =================== */
+ .bg-clr-sec {
+    background-color: #0f9fb4;
 
-.wellness-section{
-    background-color: #def7f6;
+}
+.wp-card-head-right {background: #023b73;position: relative;}
+
+.wp-card-head-right img{position: relative;right: -36px;}
+.wp-card-head-right::after{
+    content: "";
+    border: 10px solid;
+    border-color: #196d78 #196d78 transparent transparent;
+    position: absolute;
+    right: -19px;
+    top: 18px;
+    rotate: 270deg;
+}
+.wellness-packages-body {
+    background-color: #c4e8e7;
+    padding: 10px 16px;
+}
+.wellness-packages-body-sub-head {
+    border-radius: 6px 6px 0 0;
+}
+.wpbsh-brdr {
+    border-right: 1px solid #fff;
+}
+.wellness-packages-list {
+    height: 200px;
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+    overflow: auto;
+}
+.wellness-packages-list .card {
+    border-radius: 0;
+    box-shadow: none;
+    background-color: inherit;
+    border: none;
+    padding: 0 0px 0 10px;
+}
+.wellness-packages-list .card-header {
+    background-color: inherit;
+    padding: 10px 5px 0px 0;
 }
 
-.wellness-title{
-    text-align: center;
-    margin-bottom: 60px;
+.know-more-btn {
+    border: 1px solid #033d71;
+
 }
 
-.wellness-title h4{
-    font-size: 20px;
-    margin: 0;
-    font-weight: 500;
-    color: #083659;
-    text-transform: uppercase;
-}
+.wellness-section .swiper {
 
-.wellness-title h3{
-    font-size: 28px;
-    margin-bottom: 8px;
-    margin-top: 0;
-    font-weight: 600;
-    color: #083659;
-    text-transform: uppercase;
-    line-height: 1;
-}
-
-.wellness-slide-left{
-    background-color: #009eb5;
-}
-
-.wellness-slide-right{
-    background-color: #083659;
+    padding: 25px;
+    z-index: 1;
 }

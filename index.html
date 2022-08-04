@@ -225,31 +225,389 @@
 
     <section class="py-5 wellness-section">
         <div class="container">
-            <div class="wellness-title">
+            <div class="wellness-title text-center" >
                 <h4>BEST SELLING</h4>
                 <h3>WELLNESS PACKAGES</h3>
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-md-12">
-                    <div class="swiper">
+                    <div class="swiper" id="swiperPackages">
                         <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper"  >
                             <!-- Slides -->
                             <div class="swiper-slide">
-                                <div class="slide-conten d-flex justify-content-center">
-                                    <div class="wellness-slide-left px-3 py-4">
-                                        <h4 class="text-white">Max Diabetes Profile</h4>
+                                <div class="wp-card-head d-flex">
+                                    <div class="wp-card-head-left  p-3 bg-clr-sec">
+                                      <p class="text-white f-14 mb-0">WellWise</p>
+                                      <h4 class="text-white f-17 mb-1">Essential Profile</h4>
+                                      <p class="text-white f-13 lh-1_2">A basic full body checkup package</p>
                                     </div>
-                                    <div class="wellness-slide-right position-relative pl-3">
-                                        <img src="assets/img/strip.png" alt="" class="img-fluid">
+                                    <div class="wp-card-head-right pos-relative bg-clr px-3 pb-3 pt-0">
+                                      <img class="img-fluid mb-2" src="assets/img/strip.png"> 
+                                      <h3 class="f-18 text-white text-center mb-0">Rs 999</h3>
+                                      <p class="f-15 text-white text-center"><s>Rs 2670</s></p>
                                     </div>
+                              
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-content">
+                                <div class="know-more-btn py-3 px-4 bordered d-flex justify-content-between">
+                                    <a href="#" class="btn-2 btn_show_pack" >Know More</a>
+                                    <a href="#" class="btn-2 btn_show_pack" >Enquire Now</a>
+                                </div>
+                             
+                                <div class="details-collapse">
+                                    <div class="wellness-packages-body">
+                                        <div class="d-flex bg-clr-sec wellness-packages-body-sub-head  py-2 justify-content-between">
+                                          <div class="flex-grow-1 wpbsh-brdr"><p class="f-11 mb-0 text-uppercase  text-white text-center">Tests</p></div>
+                                          <div><p class="f-11 mb-0 text-center text-uppercase px-2 text-white">Parameters</p></div>
+                                        </div>
+                                        <div class="wellness-packages-list">
+                                          <div class="wellness-accordion">
+                            
+                                            <div class="card">
+                                              <div class="card-header">
+                                                <a class="collapsed card-link f-13 font-weight-bold txt-clr" tabindex="0">
+                                                  Anaemia &amp; Infection
+                                                </a>
+                                              </div>
+                                              <div class="collapse" style="display: block;">
+                                                <div class="card-body">
+                            
+                                                      <table cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td>Complete Heamogram, PS &amp; ESR</td>
+                                                            <td>1</td>
+                                                          </tr>
+                                                          <tr>
+                                                           <td>Iron and Total Iron Binding Capacity, Serum</td>
+                                                           <td>1</td>
+                                                         </tr>
+                                                         
+                                                          <tr>
+                                                           <td>Ferritin, Serum</td>
+                                                           <td>1</td>
+                                                         </tr>
+                                                        </tbody>
+                                                       
+                                                      </table>
+                            
+                            
+                            
+                                                 
+                                                 
+                                                </div>
+                                              </div>
+                                            </div>
+                                          
+                                            <div class="card">
+                                              <div class="card-header">
+                                                <a class="collapsed card-link f-13 font-weight-bold txt-clr" tabindex="0">
+                                                  Diabetes 
+                                                </a>
+                                                
+                                              </div>
+                                              <div class="collapse" style="display: block;">
+                                                <div class="card-body">
+                                                  <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>Blood Sugar Fasting,Fluoride Plasma</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                      <tr>
+                                                       <td>Glycosylated Haemoglobin (HbA1C),EDTA</td>
+                                                       <td>1</td>
+                                                     </tr>
+                                                    </tbody>
+                                                   
+                                                  </table>
+                            
+                                                 
+                                                </div>
+                                              </div>
+                                            </div>
+                                          
+                                            <div class="card">
+                                              <div class="card-header">
+                                                <a class="collapsed card-link f-13 font-weight-bold txt-clr" tabindex="0">
+                                                  Kidney
+                                                </a>
+                                              </div>
+                                              <div class="collapse" style="display: block;">
+                                                <div class="card-body">
+                                                  <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>Creatinine, Serum</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                      <tr>
+                                                       <td>Urea, Serum</td>
+                                                       <td>1</td>
+                                                     </tr>
+                                                     <tr>
+                                                      <td>Sodium, Serum</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Potassium, Serum</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Chloride, Serum</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Bicarbonate, Serum</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Uric Acid, Serum</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    
+                                                    
+                                                    </tbody>
+                                                   
+                                                  </table>
+                                                 
+                                                 
+                                                </div>
+                                              </div>
+                                            </div>
+                                          
+                                            <div class="card">
+                                              <div class="card-header">
+                                                <a class="collapsed card-link f-13 font-weight-bold txt-clr" tabindex="0">
+                                                  Liver
+                                                </a>
+                                              </div>
+                                              <div class="collapse" style="display: block;">
+                                                <div class="card-body">
+                                                  <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>Total Proteins with Albumin,Globulin, Serum</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                      <tr>
+                                                       <td>SGOT - Aspartate Amino Transferase, Serum</td>
+                                                       <td>1</td>
+                                                     </tr>
+                                                     <tr>
+                                                      <td>SGPT - Alanine Amino Transferase, Serum</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Bilirubin Total and Direct</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td> BUN, Serum</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                   
+                                                    <tr>
+                                                      <td>Gamma GT,Serum</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Alkaline Phosphatase</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    </tbody>
+                                                   
+                                                  </table>
+                                                 
+                                                  
+                                                </div>
+                                              </div>
+                                            </div>
+                            
+                                            <div class="card">
+                                              <div class="card-header">
+                                                <a class="collapsed card-link f-13 font-weight-bold txt-clr" tabindex="0">
+                                                  Heart 
+                                                </a>
+                                              </div>
+                                              <div class="collapse" style="display: block;">
+                                                <div class="card-body">
+                                                  <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>Cholesterol Total</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                      <tr>
+                                                       <td>VLDL</td>
+                                                       <td>1</td>
+                                                     </tr>
+                                                     <tr>
+                                                      <td>HDL</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>LDL</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Cholesterol/ HDL Ratio</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Triglycerides, Serum</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Apolipoproteins A1 &amp; B</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Lipoprotein(a) ; Lp (a)</td>
+                                                      <td>1</td>
+                                                    </tr>
+                                                    
+                                                    
+                            
+                                                    </tbody>
+                                                   
+                                                  </table>
+                                                  
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card">
+                                              <div class="card-header">
+                                                <a class="collapsed card-link f-13 font-weight-bold txt-clr" tabindex="0">
+                                                  Vitamin 
+                                                </a>
+                                              </div>
+                                              <div class="collapse" style="display: block;">
+                                                <div class="card-body">
+                            
+                                                  <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>25 Hydroxy Vitamin D Level</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                     
+                                                      <tr>
+                                                        <td>Vitamin B12</td>
+                                                        <td>1</td>
+                                                      </tr>
+                            
+                                                    </tbody>
+                                                   
+                                                  </table>
+                            
+                            
+                            
+                                                 
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+                                            
+                                            
+                                            
+                            
+                                            <div class="card">
+                                              <div class="card-header">
+                                                <a class="collapsed card-link f-13 font-weight-bold txt-clr" tabindex="0">
+                                                  Bone 
+                                                </a>
+                                              </div>
+                                              <div class="collapse" style="display: block;">
+                                                <div class="card-body">
+                                                  <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>Calcium</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Inorganic Phosphorus</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                    </tbody>
+                                                   
+                                                  </table>
+                            
+                                                 
+                                                </div>
+                                              </div>
+                                            </div>
+                            
+                                            <div class="card">
+                                              <div class="card-header">
+                                                <a class="collapsed card-link f-13 font-weight-bold txt-clr" tabindex="0">
+                                                  Thyroid 
+                                                </a>
+                                              </div>
+                                              <div class="collapse" style="display: block;">
+                                                <div class="card-body">
+                                                  <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>Free T3</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>FreeT4</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>TSH</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                    </tbody>
+                                                   
+                                                  </table>
+                                                 
+                                                 
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+                                            
+                                             <div class="card">
+                                              <div class="card-header">
+                                                <a class="collapsed card-link f-13 font-weight-bold txt-clr" tabindex="0">
+                                                  Others 
+                                                </a>
+                                              </div>
+                                              <div class="collapse" style="display: block;">
+                                                <div class="card-body">
+                            
+                                                  <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                  
+                                                      <tr>
+                                                        <td>CRP (C-Reactive Protein), High Sensitive, Serum</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                      
+                                                      <tr>
+                                                        <td>Urine Routine and Microscopy</td>
+                                                        <td>1</td>
+                                                      </tr>
+                            
+                                                    </tbody>
+                                                   
+                                                  </table>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                            
+                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
 
-                                </div>
                             </div>
+                     
                         </div>
 
                         <!-- If we need navigation buttons -->
@@ -394,6 +752,33 @@
                     el: '.swiper-scrollbar',
                 },
             });
+
+            
+             // Swiper: Slider
+            const swiper1 = new Swiper(' #swiperPackages', {
+                // Optional parameters
+                slidesPerView: 3,
+                loop: true,
+                paginationClickable: true,
+                spaceBetween: 30,
+                lazyLoading: true,
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+           
         });
 
         AOS.init({
