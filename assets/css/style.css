@@ -322,3 +322,44 @@ color:#013975;
 .btn-section a{
     text-align: left;
 }
+
+
+
+/* =================
+ wellness-package 
+ =================== */
+
+.wellness-section{
+    background-color: #def7f6;
+}
+
+.wellness-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.wellness-title h4{
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+    color: #083659;
+    text-transform: uppercase;
+}
+
+.wellness-title h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    font-weight: 600;
+    color: #083659;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.wellness-slide-left{
+    background-color: #009eb5;
+}
+
+.wellness-slide-right{
+    background-color: #083659;
+}
