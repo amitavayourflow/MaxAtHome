@@ -65,7 +65,7 @@ p, span, h2, h3, h4, h5, h6, li, strong{
 #enquiry .form-check-input{
     position: absolute;
     left: 0;
-    width: 25px !important;
+    width: 14px !important;
     top: -10px;
 }
 .first {
