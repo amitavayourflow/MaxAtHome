@@ -122,10 +122,16 @@ bottom: -20px;
     
     list-style: none;
 }
+.section-banner .swiper-slide  img{
+  max-height: 295px;
+  margin: auto;
+}
 .swiper-slide ul li {
     position: relative;
     padding-left: 30px;
+    display: inline-flex;
     margin-bottom: 5px;
+    margin-right: 15px;
 }
 .swiper-slide ul li::before {
     font-family: "Font Awesome 5 Pro";
@@ -134,13 +140,14 @@ bottom: -20px;
     left: 0;
     top: -4px;
     font-size: 22px;
-    color: #fff;
+    color: #023b73;
     font-weight: 500;
 }
 
 h2.text-style {
 font-size: 20px;
 font-weight: 700;
+color: #023b73;
 }
 h2.text-style span{
 color:#013975;
@@ -191,6 +198,13 @@ color:#013975;
     flex-direction: column;
     /* margin: unset; */
     justify-content: center;
+}
+.slide-content {
+    background: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    min-height: 216px;
 }
 .single-services::before {
     content: "";
@@ -291,9 +305,12 @@ color:#013975;
 
 
 /* check-up section */
+.check-up {
+    background-blend-mode: multiply;
+    background-color: #0f9fb4c4;
 
-.check-up{
-    background-color: #243f6f;
+    background-size: contain;
+
 }
 
 .checkup-img{
@@ -307,8 +324,9 @@ color:#013975;
 
 .checkup-text h2{
     font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
+    font-weight: 600;
+    /* margin-bottom: 1.5rem; */
+    color: white;
 }
 
 .btn-2{
@@ -338,7 +356,7 @@ color:#013975;
 }
 .wp-card-head-right {background: #023b73;position: relative;}
 
-.wp-card-head-right img{position: relative;right: -36px;}
+.wp-card-head-right img{position: relative;right: -16px;}
 .wp-card-head-right::after{
     content: "";
     border: 10px solid;
@@ -385,10 +403,22 @@ color:#013975;
     padding: 10px 5px 0px 0;
 }
 
-.know-more-btn {
-    border: 1px solid #033d71;
+.wellness-section .btn-2 {
+    color: #fff;
+    background-color: #009eb5;
+    font-size: 15px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
 }
+.wellness-title,  .fever-section, .body-checkup-section{
+    margin-bottom: 20px;
+}
+.wellness-title h3, .fever-section h3, .body-checkup-section h3{
+    color: #023b73;
+    font-weight: 600;
 
+}
 .txt-clr{
     color: #083659;
 }
@@ -409,10 +439,7 @@ color:#013975;
     font-size: 11px;
 }
 
-.wellness-section, .fever-section, .body-checkup-section, .swiper .swiper-slide {
-    padding-right: 25px;
-    z-index: 1;
-}
+
 
 
 .wellness-accordion .card-header .card-link{
@@ -421,12 +448,51 @@ color:#013975;
     cursor: pointer;
     width: 100%;
 }
+.wellness-section .slick-slide, .body-checkup-section .slick-slide , .fever-section .slick-slide{
 
+    margin-right: 35px;
+}
+.wellness-section .nav-button.slick-arrow , .body-checkup-section .nav-button.slick-arrow , .fever-section  .nav-button.slick-arrow{
+    background: white;
+    width: fit-content;
+    right: 50% !important;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: -60px;
+    right: 15px;
+    z-index: 9;
+    border: 1px solid #ccc;
+    transform: translateX(100% );   
+    top: initial;
+}
+.wp-card-head  {
+    min-height: 160px;
+}
+.wellness-section .slick-slide, .body-checkup-section .slick-slide ,  .fever-section  .slick-slide{
+
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #033d71;
+}
+.wellness-section .nav-button.slick-arrow.prev-btn  , .body-checkup-section .nav-button.slick-arrow.prev-btn  , .fever-section .nav-button.slick-arrow.prev-btn  {
+    transform: translateX(0% );  
+}
 .wellness-packages-list .card-body{
     padding: 0;
     display: flex;
 }
-
+.nav-button.slick-arrow {
+    background: white;
+    width: fit-content;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 9;
+}
+.nav-button.prev-btn.slick-arrow {
+    right: 70px;
+}
 .card-body table{
     width: 100%;
 }

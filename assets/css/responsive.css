@@ -1,0 +1,7 @@
+@media(max-width:768px){
+
+    .wellness-section .slick-slide, .body-checkup-section .slick-slide, .fever-section .slick-slide {
+        margin-right: 0;
+      
+    }
+}
