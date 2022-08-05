@@ -411,13 +411,17 @@ color:#013975;
     border: none;
     border-radius: 4px;
 }
-.wellness-title,  .fever-section, .body-checkup-section{
+.wellness-title,  .fever-title, .body-checkup-title{
     margin-bottom: 20px;
 }
 .wellness-title h3, .fever-section h3, .body-checkup-section h3{
     color: #023b73;
     font-weight: 600;
 
+}
+section.body-checkup-section {
+    background: #19a0b32e;
+    margin-top: 25px;
 }
 .txt-clr{
     color: #083659;
