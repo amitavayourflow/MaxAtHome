@@ -329,9 +329,11 @@ color:#013975;
 /* =================
  wellness-package 
  =================== */
+
+
+
  .bg-clr-sec {
     background-color: #0f9fb4;
-
 }
 .wp-card-head-right {background: #023b73;position: relative;}
 
@@ -375,11 +377,56 @@ color:#013975;
 
 .know-more-btn {
     border: 1px solid #033d71;
-
 }
 
-.wellness-section .swiper {
+.txt-clr{
+    color: #083659;
+}
 
+.f-13{
+    font-size: 13px;
+}
+
+.f-17{
+    font-size: 17px;
+}
+
+.f-18{
+    font-size: 18px;
+}
+
+.f-11{
+    font-size: 11px;
+}
+
+.wellness-section, .fever-section, .body-checkup-section, .swiper {
     padding: 25px;
     z-index: 1;
 }
+
+.wellness-accordion .card-header .card-link{
+    outline: none;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+
+.wellness-packages-list .card-body{
+    padding: 0;
+    display: flex;
+}
+
+.card-body table{
+    width: 100%;
+}
+
+.card-body td:last-child {
+    width: 20%;
+    text-align: center;
+}
+.card-body td {
+    color: #083659;
+    font-size: 13px;
+}
+
+/*  */
