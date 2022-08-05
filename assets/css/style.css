@@ -201,8 +201,8 @@ color:#013975;
     height: 100%;
     background: #00c6ff;
     border-radius: 30px 5px 5px 5px;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: -webkit-linear-gradient(to  right,#11b3ee , #68d9d7 );
+    background: linear-gradient(to  right,#11b3ee , #68d9d7 );
     opacity: 0;
     visibility: hidden;
     -moz-transition: all 0.3s ease 0s;
@@ -283,7 +283,7 @@ color:#013975;
 
 }
 .footer-pills ul li:hover {   
-     background: linear-gradient(to right, #0072ff, #00c6ff);
+     background: linear-gradient(to  right,#11b3ee , #68d9d7 );
     color: white;}
 .footer-copyright {
     background-color: #014382;
