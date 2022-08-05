@@ -386,7 +386,7 @@ color:#013975;
     border-right: 1px solid #fff;
 }
 .wellness-packages-list {
-    height: 200px;
+    max-height: 400px;
     background-color: #fff;
     border-radius: 0 0 6px 6px;
     overflow: auto;
@@ -512,3 +512,15 @@ section.body-checkup-section {
 }
 
 /*  */
+
+.modal-body {
+
+    padding: 0;
+}
+
+.modal-content {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
