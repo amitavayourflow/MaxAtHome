@@ -334,6 +334,7 @@ color:#013975;
 
  .bg-clr-sec {
     background-color: #0f9fb4;
+    width: 100%;
 }
 .wp-card-head-right {background: #023b73;position: relative;}
 
@@ -344,8 +345,17 @@ color:#013975;
     border-color: #196d78 #196d78 transparent transparent;
     position: absolute;
     right: -19px;
-    top: 18px;
+    top: 17px;
     rotate: 270deg;
+}
+.details-collapse{
+    display: none;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.swiper-slide.Dekhao  .details-collapse{
+    display: block;
+    opacity: 1;
 }
 .wellness-packages-body {
     background-color: #c4e8e7;
@@ -399,10 +409,11 @@ color:#013975;
     font-size: 11px;
 }
 
-.wellness-section, .fever-section, .body-checkup-section, .swiper {
-    padding: 25px;
+.wellness-section, .fever-section, .body-checkup-section, .swiper .swiper-slide {
+    padding-right: 25px;
     z-index: 1;
 }
+
 
 .wellness-accordion .card-header .card-link{
     outline: none;

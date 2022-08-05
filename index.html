@@ -231,7 +231,7 @@
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-md-12">
-                    <div class="swiper" id="swiperPackages">
+                    <div class="swiper  swiperPackages" >
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
@@ -2715,7 +2715,7 @@
         </div>
         <div class="row d-flex justify-content-center">
           <div class="col-md-12">
-            <div class="swiper" id="swiperPackages">
+            <div class="swiper swiperPackages" >
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                  <!-- Slides -->
@@ -3411,7 +3411,7 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      <div class="swiper" id="swiperPackages">
+      <div class="swiper swiperPackages" >
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -3912,31 +3912,33 @@
                 },
             });
 
-            
-             // Swiper: Slider
-            const swiper1 = new Swiper(' #swiperPackages', {
-                // Optional parameters
-                slidesPerView: 3,
-                loop: true,
-                paginationClickable: true,
-                spaceBetween: 30,
-                lazyLoading: true,
-                // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-
-                // Navigation arrows
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-
-                // And if we need scrollbar
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                },
+            var swiper1 = new Swiper(".swiperPackages", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              slidesPerGroup: 3,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+           
+              },
             });
+
+        
+
+
+            $('.know-more-btn').children('.btn_show_pack:first-child').click(function(e){
+              e.preventDefault();
+              $(this).parents('.swiper-slide').toggleClass('Dekhao');
+           
+            });
+          
+            
+            
            
         });
 
