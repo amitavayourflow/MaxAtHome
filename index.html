@@ -3943,8 +3943,8 @@
                 </div>
                 <div class="col-lg-6  my-auto ">
 
-                    <div class="btn-section text-center text-left">
-                        <p class="text-right">
+                    <div class="btn-section text-lg-center text-left mt-2 mt-lg-0">
+                        <p class="">
                             <button class="btn-1 btn text-white">Book Now</button>
                         </p>
                     </div>
@@ -4069,7 +4069,7 @@
    
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn text-white btn-1 " data-dismiss="modal">Close</button>
+        <a href="#" class="btn text-white btn-1 modal-close ">Close</a>
   
       </div>
     </div>
@@ -4094,8 +4094,19 @@
               var ModalContent = $(this).parent('.know-more-btn').siblings('.details-collapse').html();
               $('#exampleModalLong').find('.modal-body').html(ModalContent);
               $('#exampleModalLong').modal('show');
-            
+              $('#exampleModalLong').show();
+              $('.modal-backdrop').show();
+              $('body').addClass('modal-open')
             })
+
+            $('.modal-close').click(function(e){
+              alert('sad');
+              e.preventDefault()
+              $('#exampleModalLong').hide();
+              $('.modal-backdrop').hide();
+              $('body').removeClass('modal-open')
+            })
+            
             // $('.know-more-btn')
             //     .children('.btn_show_pack:first-child')
             //     .click(function (e) {
