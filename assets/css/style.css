@@ -422,6 +422,7 @@ color:#013975;
 section.body-checkup-section {
     background: #19a0b32e;
     margin-top: 25px;
+    padding-bottom: 80px !important;
 }
 .txt-clr{
     color: #083659;
@@ -459,7 +460,7 @@ section.body-checkup-section {
 .wellness-section .nav-button.slick-arrow , .body-checkup-section .nav-button.slick-arrow , .fever-section  .nav-button.slick-arrow{
     background: white;
     width: fit-content;
-    right: 50% !important;
+    right: 52% !important;
     padding: 10px 20px;
     position: absolute;
     bottom: -60px;
