@@ -178,12 +178,14 @@
                                   
                                     
                                         <p class="f-17 lh-1_2">A special best full body checkup package  
-                                            . . .
-                                            <a href="#" class="text-white underline" data-toggle="modal" data-target="#exampleModalLong">
-                                            Know More
+                                            . . .  <a href="#" class=" ml-2 modalBtn text-white btn_show_pack" data-toggle="modal" data-target="#exampleModalLong">
+                                                Know More
                                             </a>
+                                         
                                         </p>
+                                        
                                     </div>
+                                   
                                     <div class="wp-card-head-right pos-relative bg-clr p-3">
                                      
                                         <div class="d-flex justify-content-between align-items-center">
@@ -199,8 +201,8 @@
                                     </div>
 
                                 </div>
-                          
-
+                                
+                               
                                 <div class="details-collapse">
                                     <div class="wellness-packages-body">
                                         <div
@@ -3936,13 +3938,7 @@
                 <div class="col-lg-3 ">
                     <div class="footer-img">
                         <img src="assets/img/logo-2.png" alt="">
-                        <div class="d-flex align-items-center mt-4">
-                            <img
-                                class="mr-2 header-cal" src="assets/img/phone-call-svgrepo-com.svg" >
-                            <span class="font-weight-bold f-1 f-sm-1">
-                                <a class="txt-clr header-ph-link" href="tel:01244781006">01244781006</a>
-                            </span>
-                        </div>
+                        
                     </div>
                   
                     
@@ -3983,7 +3979,10 @@
             </div>
         </div>
     </footer>
-
+    <div class="fixed-footer">
+        <a class="btn btn-primary btn-modern cta float-right" href="tel:+91 9999999999">Call Us</a> 
+        <a class="btn btn-primary btn-modern cta float-right" href="#banner-section">Enquire Now</a>
+    </div>
     <!-- Modal -->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog-centered " role="document">
@@ -4054,7 +4053,7 @@
             
               
 
-              var ModalContent = $(this).parent('.know-more-btn').siblings('.details-collapse').html();
+              var ModalContent = $(this).parents('.wp-card-head').siblings('.details-collapse').html();
               $('#exampleModalLong').find('.modal-body').html(ModalContent);
               $('#exampleModalLong').modal('show');
               $('#exampleModalLong').show();

@@ -36,11 +36,12 @@ p, span, h2, h3, h4, h5, h6, li, strong{
     text-transform:uppercase;
     letter-spacing: .05em;
 }
-
 #mainnav #menu {
     display: none;
-    padding: .8em 1.5em;
+    padding: 10px 20px;
     cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 20px;
 }
 
 
@@ -344,8 +345,8 @@ color:#013975;
 .footer-pills ul li {
     border: 1px solid rgb(0 0 0 / 20%);
     border-radius: 8px;
-    padding: 10px 14px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 12px;
     line-height: 1;
     color: #555f51;
     white-space: nowrap;
@@ -412,7 +413,7 @@ color:#013975;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 130px;
+  
 }
 .underline{
     text-decoration: underline;
@@ -492,6 +493,10 @@ color:#013975;
     font-weight: 400;
     position: relative;
 
+}
+.wellness-section  .bg-clr-sec,  .fever-section .bg-clr-sec, .body-checkup-section .bg-clr-sec{
+
+    min-height: 130px;
 }
 
 .wellness-title h3::after, .fever-section h3::after, .body-checkup-section h3::after, .why-choose .section-title h3::after {
@@ -608,4 +613,7 @@ color:#013975;
     margin: auto;
     border-radius: 10px;
     overflow: hidden;
+}
+.fixed-footer {
+    display: none;
 }

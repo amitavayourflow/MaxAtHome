@@ -12,6 +12,27 @@
 
 
 @media screen and (max-width:991px) {
+    .fixed-footer a.btn {
+        min-width: 48%;
+        font-size: 16px;
+        padding: 15px 25px !important;
+        background: #44c1be;
+        color: #fff;
+        font-weight: 600;
+    }
+    .fixed-footer {
+        padding: 10px 0;
+        background-color: #001d52 !important;
+        display: flex;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        justify-content: space-around;
+        z-index: 99;
+    }
     #mainnav #menu {
         display: block;
     }
