@@ -8,3 +8,34 @@
      max-width: 150px;
     }
 }
+@media screen and (max-width:991px) {
+    .wellness-title h3, .fever-section h3, .body-checkup-section h3, .why-choose .section-title h3 {
+        color: #fff;
+        display: inline-block;
+        background: #033d71;
+        padding: 5px 15px;
+        font-weight: 400;
+        position: relative;
+        font-size: 16px;
+    }
+    
+}
+@media (min-width:768px) {
+    .swiper.swiperPackages {
+        margin-right: -25px;
+    }
+    
+}
+@media (min-width:992px) {
+    .navbar-brand {
+  
+        max-width: 200px;
+    }
+    .pos-ab{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}

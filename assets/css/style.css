@@ -16,13 +16,15 @@ section{
 p, span, h2, h3, h4, h5, h6, li, strong{
     margin: 0;
 }
-
+.pos-relative{
+    position: relative;
+}
 
 /*banner*/
 
 .section-banner{
     background-blend-mode: multiply;
-    background-color: white;
+    background-color: #d7eef1;
     background-size: cover;
 }
 #enquiry {
@@ -50,7 +52,7 @@ p, span, h2, h3, h4, h5, h6, li, strong{
     color: #777;
 }
 #enquiry .form-check-label{
-    font-size: 12px;
+    font-size: 10px;
     position: relative;
     padding-left: 10px;
     text-align: left;
@@ -157,16 +159,7 @@ color:#013975;
 
 /* why-choose-us */
 
-.section-title {
-    text-align: center;
-    margin-bottom: 60px;
-}
 
-.section-title h3 {
-    font-size: 28px;
-    margin-bottom: 8px;
-    margin-top: 0;
-}
 
 .section-title span {
     display: inline-block;
@@ -259,7 +252,10 @@ color:#013975;
 .single-services:hover h3, .single-services:hover img, .single-services:hover p {
     color: #fff;
 }
-
+.footer-img{
+   
+  
+}
 .single-services:hover {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
@@ -285,8 +281,8 @@ color:#013975;
 .footer-pills ul li {
     border: 1px solid rgb(0 0 0 / 20%);
     border-radius: 8px;
-    padding: 5px 10px;
-    font-size: 10px;
+    padding: 10px 14px;
+    font-size: 16px;
     line-height: 1;
     color: #555f51;
     white-space: nowrap;
@@ -294,7 +290,6 @@ color:#013975;
     font-weight: 700;
     display: inline-flex;
     cursor: pointer;
-
 }
 .footer-pills ul li:hover {   
      background: linear-gradient(to  right,#11b3ee , #68d9d7 );
@@ -414,18 +409,29 @@ color:#013975;
     border: none;
     border-radius: 4px;
 }
-.wellness-title,  .fever-title, .body-checkup-title{
+.wellness-title,  .fever-title, .body-checkup-title, .section-title{
     margin-bottom: 20px;
+    border-bottom: 4px solid #023b73;
 }
 .wellness-title h3, .fever-section h3, .body-checkup-section h3, .why-choose .section-title h3{
-    color: #023b73;
-    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    background: #033d71;
+    padding: 5px 15px;;
+    font-weight: 400;
+    position: relative;
 
 }
-section.body-checkup-section {
-    background: #19a0b32e;
-    margin-top: 25px;
-    padding-bottom: 80px !important;
+
+.wellness-title h3::after, .fever-section h3::after, .body-checkup-section h3::after, .why-choose .section-title h3::after {
+    content: '';
+    position: absolute;
+    background: #033d71;
+    right: -28px;
+    height: 100%;
+    width: 40px;
+    transform: skewX(30deg);
+    top: 0;
 }
 .txt-clr{
     color: #083659;
