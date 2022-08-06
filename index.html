@@ -3981,7 +3981,7 @@
     </footer>
     <div class="fixed-footer">
         <a class="btn btn-primary btn-modern cta float-right" href="tel:+91 9999999999">Call Us</a> 
-        <a class="btn btn-primary btn-modern cta float-right" href="#banner-section">Enquire Now</a>
+        <a class="btn btn-primary btn-modern cta float-right" href="#" data-page="home">Enquire Now</a>
     </div>
     <!-- Modal -->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -4037,7 +4037,7 @@
             // JQUERY NAV TOGGLE
             $('#menu').bind('click',function(event){
                 $('#mainnav ul').slideToggle();
-                $('body').css('overflow-y','hidden')
+                $('body').css('overflow-y','initial')
             });
         
             $(window).resize(function(){  
@@ -4091,11 +4091,13 @@
                   slidesToScroll: 3,
                   responsive: [
                     {
-                      breakpoint: 1024,
+                      breakpoint: 991,
                       settings: {
                         slidesToShow:2,
                         slidesToScroll: 2,
                         infinite: true,
+                        dots:true,
+                        arrows: false,
                       
                       }
                     },
@@ -4103,7 +4105,9 @@
                       breakpoint: 768,
                       settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        dots:true,
+                        arrows: false,
                       }
                     }
                     
@@ -4122,11 +4126,13 @@
                   slidesToScroll: 3,
                   responsive: [
                     {
-                      breakpoint: 1024,
+                      breakpoint: 991,
                       settings: {
                         slidesToShow:2,
                         slidesToScroll: 2,
                         infinite: true,
+                        dots:true,
+                        arrows: false,
                        
                       }
                     },
@@ -4134,7 +4140,9 @@
                       breakpoint: 768,
                       settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        dots:true,
+                        arrows: false,
                       }
                     }
                     
@@ -4153,11 +4161,13 @@
                   slidesToScroll: 3,
                   responsive: [
                     {
-                      breakpoint: 1024,
+                      breakpoint: 991,
                       settings: {
                         slidesToShow:2,
                         slidesToScroll: 2,
                         infinite: true,
+                        dots:true,
+                        arrows: false,
                      
                       }
                     },
@@ -4165,7 +4175,9 @@
                       breakpoint: 768,
                       settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        dots:true,
+                        arrows: false,
                       }
                     }
                     
@@ -4189,7 +4201,7 @@
             if (!container.is(e.target) && container.has(e.target).length === 0 && $(window).width() <991 )  
             {
                 container.hide();
-                $('body').css('overflow-y','auto')
+                $('body').css('overflow-y','initial')
             }
         });
     </script>
