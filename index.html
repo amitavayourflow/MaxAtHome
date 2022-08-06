@@ -177,27 +177,29 @@
                                     <div class="wp-card-head-left  p-3 bg-clr-sec">
                                   
                                     
-                                        <p class="f-17 lh-1_2">A special best full body checkup package</p>
+                                        <p class="f-17 lh-1_2">A special best full body checkup package  
+                                            . . .
+                                            <a href="#" class="text-white underline" data-toggle="modal" data-target="#exampleModalLong">
+                                            Know More
+                                            </a>
+                                        </p>
                                     </div>
-                                    <div class="wp-card-head-right pos-relative bg-clr px-4 py-2 ">
+                                    <div class="wp-card-head-right pos-relative bg-clr p-3">
                                      
-                                        <div class="d-flex justify-content-between">
-                                            <h3 class="f-18 text-white text-center mb-0">Rs 5000</h3>
+                                        <div class="d-flex justify-content-between align-items-center">
                                             <p class="f-15 text-white text-center">
                                                 <s>Rs 12090</s>
+
+                                                <span class="ml-2 f-18 text-white text-center mb-0">Rs 5000</span>
                                             </p>
+                                            <a href="#" class="btn-2 btn_show_pack  ">Enquire Now</a>
+                                            
                                         </div>
                                    
                                     </div>
 
                                 </div>
-                                <div class="know-more-btn py-3 px-3 bordered d-flex justify-content-between">
-                                   
-                                    <button type="button" class="btn-2 btn_show_pack" data-toggle="modal" data-target="#exampleModalLong">
-                                      Know More
-                                    </button>
-                                    <a href="#" class="btn-2 btn_show_pack">Enquire Now</a>
-                                </div>
+                          
 
                                 <div class="details-collapse">
                                     <div class="wellness-packages-body">
@@ -4011,16 +4013,17 @@
         $(document).ready(function () {
           
             var num = $('header').height();
-            $("a").click(function(){
+            $("header ul li a").click(function(){
                 var pageId = $(this).attr("data-page");
                 if( $(window).width() <991){
                     $('#menu').click();
                 }
                
               
-                $("html, body").animate({ scrollTop: $("#"+pageId).offset().top - num }, 1000);
+                $("html, body").animate({ scrollTop: $("#"+pageId).offset().top - num }, 500);
                 
             });
+            
             $(window).bind('scroll', function () {
           
                 if ($(window).scrollTop() > num) {
