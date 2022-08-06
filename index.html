@@ -30,24 +30,49 @@
     </head>
 
     <body>
-        <header>
+        <header id="menuHeader">
+            <div class="top-bar bg-blue-primary d-lg-none py-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <i class="fal fa-phone text-white " style=" transform: scaleX(-1);"></i>
+                            <span class=" f-1 f-sm-1">
+                                <a class=" text-white header-ph-link" href="tel:01244781006">01244781006</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+         
+            </div>
             <div class="container">
+               
                 <div class="row  py-3">
                     <div class="col-12 ">
-                        <div class="d-flex justify-content-between mr-4">
+                      
+                        
+                        <nav id="mainnav" class="group d-flex justify-content-between align-items-center">
+                            
+                           
                             <div class="navbar-brand">
-                                <img class="header-logo img-fluid" src="assets/img/logo_max_home.png">
+                                <a href="#" data-page="home"> <img class="header-logo img-fluid" src="assets/img/logo_max_home.png"></a>
+                               
                             </div>
-                            <div class="d-flex align-items-center">
-                                <img
-                                class="mr-2 header-cal"
-                                src="assets/img/phone-call-svgrepo-com.svg"
-                                style="max-width: 30px;">
-                            <span class="font-weight-bold txt-clr f-1 f-sm-1" style="font-size: 26px ;">
-                                <a class="txt-clr header-ph-link" href="tel:01244781006">01244781006</a>
-                            </span>
+                            <ul class="pl-0">
+                                <li><a href="#" data-page="bsp">Best Selling Packages</a></li>
+                                <li><a href="#" data-page="fbcp">Full Body-Checkup Profile</a></li>
+                                <li><a href="#" data-page="fp">Fever Profile</a></li>
+                                <li><a href="#" data-page="whychoose">Why Choose</a></li>
+                           
+                            </ul>
+                            <div class="align-items-center d-none d-lg-flex">
+                                <img  class="mr-2 header-cal"   src="assets/img/phone-call-svgrepo-com.svg"  >
+                                <span class="font-weight-bold f-1 f-sm-1">
+                                    <a class="txt-clr header-ph-link" href="tel:01244781006">01244781006</a>
+                                </span>
                             </div>
-                        </div>
+                            <div id="menu"><i class="far fa-bars"></i></div>
+                        </nav>
+
 
                     </div>
 
@@ -56,7 +81,7 @@
             </div>
         </div>
     </header>
-    <section class="section-banner pb-4 pt-0 py-lg-0 pos-relative" >
+    <section class="section-banner pb-4 pt-0 py-lg-0 pos-relative" id="home">
         <img src="assets/img/bannerdesktop.jpg" alt="" class="img-fluid w-100 d-lg-block d-none desk">
         <img src="assets/img/bannerdesktop.jpg" alt="" class="img-fluid w-100 d-lg-none mob">
         <div class="container pos-ab">
@@ -133,7 +158,7 @@
 
     <!-- =====wellness-package===== -->
 
-    <section class="py-5 wellness-section">
+    <section class="py-5 wellness-section" id="bsp">
         <div class="container">
             <div class="wellness-title">
            
@@ -2640,7 +2665,7 @@
 
     <!-- =====body-checkup-section===== -->
 
-    <section class="py-5 body-checkup-section">
+    <section class="py-5 body-checkup-section" id="fbcp">
         <div class="container">
             <div class="body-checkup-title text-left">
                 <h3>Full Body-Checkup Profile</h3>
@@ -3410,7 +3435,7 @@
     </section>
 
     <!-- =====fever-section===== -->
-    <section class="pb-5 fever-section">
+    <section class="pb-5 fever-section" id="fp">
         <div class="container">
             <div class="fever-title text-left">
                 <h3>Fever Profile</h3>
@@ -3829,9 +3854,7 @@
         </div>
     </section>
 
-    <section
-        class="check-up py-5 mt-4"
-        style="background-image: url(assets/img/paralax-bg.jpg) ;">
+    <section class="check-up py-5 mt-4"style="background-image: url(assets/img/paralax-bg.jpg) ;" id="">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 my-auto ">
@@ -3854,7 +3877,7 @@
 
     <!-- =====Why-Choose===== -->
 
-    <section class="why-choose py-5">
+    <section class="why-choose py-5" id="whychoose">
         <div class="container">
             <div class="section-title">
              
@@ -3913,10 +3936,8 @@
                         <img src="assets/img/logo-2.png" alt="">
                         <div class="d-flex align-items-center mt-4">
                             <img
-                                class="mr-2 header-cal"
-                                src="assets/img/phone-call-svgrepo-com.svg"
-                                style="max-width: 40px;">
-                            <span class="font-weight-bold txt-clr f-1 f-sm-1" style="font-size: 30px ;">
+                                class="mr-2 header-cal" src="assets/img/phone-call-svgrepo-com.svg" >
+                            <span class="font-weight-bold f-1 f-sm-1">
                                 <a class="txt-clr header-ph-link" href="tel:01244781006">01244781006</a>
                             </span>
                         </div>
@@ -3924,7 +3945,7 @@
                   
                     
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-9 mt-3 mt-lg-0">
                     <div class="footer-pills">
                         <ul>
                             <li>Bone Test</li>
@@ -3988,6 +4009,44 @@
 
     <script>
         $(document).ready(function () {
+          
+            var num = $('header').height();
+            $("a").click(function(){
+                var pageId = $(this).attr("data-page");
+                if( $(window).width() <991){
+                    $('#menu').click();
+                }
+               
+              
+                $("html, body").animate({ scrollTop: $("#"+pageId).offset().top - num }, 1000);
+                
+            });
+            $(window).bind('scroll', function () {
+          
+                if ($(window).scrollTop() > num) {
+                    $('#menuHeader').addClass('fixed');
+                  
+                } else {
+                    $('#menuHeader').removeClass('fixed');
+                  
+                }
+            });
+
+            // JQUERY NAV TOGGLE
+            $('#menu').bind('click',function(event){
+                $('#mainnav ul').slideToggle();
+                $('body').css('overflow-y','hidden')
+            });
+        
+            $(window).resize(function(){  
+                var w = $(window).width();  
+                if(w > 991) {  
+                    $('#mainnav ul').removeAttr('style');  
+
+                    
+                }  
+
+            });
             $('.modalBtn').click(function(){
             
               
@@ -4119,7 +4178,20 @@
         });
 
         AOS.init({duration: 1200})
+
+        $(document).mouseup(function(e) 
+        {
+            var container = $("#mainnav ul");
+
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && container.has(e.target).length === 0 && $(window).width() <991 )  
+            {
+                container.hide();
+                $('body').css('overflow-y','auto')
+            }
+        });
     </script>
+   
     
 </body>
 
