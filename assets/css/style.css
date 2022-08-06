@@ -1,5 +1,6 @@
 
 
+
 *, ::after, ::before{
     box-sizing: border-box;
 }
@@ -543,7 +544,7 @@ color:#013975;
 }
 .wellness-section .slick-slide, .body-checkup-section .slick-slide , .fever-section .slick-slide{
 
-    margin:0 10px;
+margin-right: 20px;
 }
 .wellness-section .nav-button.slick-arrow , .body-checkup-section .nav-button.slick-arrow , .fever-section  .nav-button.slick-arrow{
     background: white;
@@ -588,10 +589,10 @@ color:#013975;
     z-index: 9;
 }
 .nav-button.next-btn.slick-arrow {
-     right: 0; 
+     right: -40px; 
 }
 .nav-button.prev-btn.slick-arrow {
-    left: 0; 
+    left: -60px; 
 }
 .card-body table{
     width: 100%;

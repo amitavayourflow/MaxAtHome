@@ -105,6 +105,16 @@
         position: relative;
         font-size: 16px;
     }
+    .wellness-section .nav-button.slick-arrow, .body-checkup-section .nav-button.slick-arrow, .fever-section .nav-button.slick-arrow {
+
+        transform: translateY(-50% );
+        top: 110%;
+        border-radius: 100px;
+        right: 40% !important;
+    }
+    .wellness-section .nav-button.slick-arrow.prev-btn, .body-checkup-section .nav-button.slick-arrow.prev-btn, .fever-section .nav-button.slick-arrow.prev-btn {
+        left:35%
+    }
    
     
 }
@@ -115,9 +125,7 @@
     
 }
 @media (min-width:992px) {
-    .swiper-wrapper {
-        padding: 0px 40px;
-    }
+  
     #mainnav ul li a:hover {
         color: #fff;
         background: #023b73;
