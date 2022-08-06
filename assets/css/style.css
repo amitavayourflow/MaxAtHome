@@ -427,11 +427,13 @@ color:#013975;
     content: '';
     position: absolute;
     background: #033d71;
-    right: -28px;
+    right: -25px;
     height: 100%;
     width: 40px;
     transform: skewX(30deg);
+
     top: 0;
+    z-index: -1;
 }
 .txt-clr{
     color: #083659;
