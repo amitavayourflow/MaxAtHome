@@ -19,7 +19,9 @@ p, span, h2, h3, h4, h5, h6, li, strong{
 .pos-relative{
     position: relative;
 }
-
+.bg-blue-primary{
+    background:#023b73;
+}
 /*banner*/
 
 .section-banner{
@@ -349,6 +351,7 @@ color:#013975;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    min-height: 130px;
 }
 
 
@@ -481,8 +484,11 @@ color:#013975;
     transform: translateX(100% );   
     top: initial;
 }
-.wp-card-head  {
-    min-height: 160px;
+.wp-card-head {
+    /* min-height: 160px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .wellness-section .slick-slide, .body-checkup-section .slick-slide ,  .fever-section  .slick-slide{
 
