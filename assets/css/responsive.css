@@ -112,9 +112,12 @@
     .wellness-section .nav-button.slick-arrow, .body-checkup-section .nav-button.slick-arrow, .fever-section .nav-button.slick-arrow {
 
         transform: translateY(-50% );
-        top: 115%;
+        top: 108%;
         border-radius: 100px;
         right: 40% !important;
+    }
+    .wellness-section .nav-button.slick-arrow{
+        top: 120%;
     }
     .wellness-section .nav-button.slick-arrow.prev-btn, .body-checkup-section .nav-button.slick-arrow.prev-btn, .fever-section .nav-button.slick-arrow.prev-btn {
         left:35%
