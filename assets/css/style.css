@@ -447,7 +447,7 @@ color:#013975;
 }
 
 
-.wp-card-head-right {background: #023b73;position: relative;}
+.wp-card-head-right {background: #0f9fb4;position: relative;}
 
 .wp-card-head-right img{position: relative;right: -16px;}
 .wp-card-head-right::after{
@@ -464,13 +464,16 @@ color:#013975;
     opacity: 0;
     transition: all 0.4s;
 }
+.wellness-section .wp-card-head-left P a{
+    color: #013975;
+}
 .swiper-slide.Dekhao  .details-collapse{
     display: block;
     opacity: 1;
 }
 .wellness-packages-body {
     background-color: #c4e8e7;
-    padding: 10px 16px;
+    padding: 5px;
 }
 .wellness-packages-body-sub-head {
     border-radius: 6px 6px 0 0;
