@@ -162,16 +162,16 @@ background-color: #196d78;
 transform: skew(10deg);
 }
 
-/* .first::before,
-h2::after,
-h2::before {
-content: "";
-border: 10px solid;
-border-color: #196d78 #196d78 transparent transparent;
-position: absolute;
-left: 0;
-bottom: -20px;
-} */
+ .section-banner .first::before,
+    h2::after,
+    h2::before {
+    content: "";
+    border: 10px solid;
+    border-color: #196d78 #196d78 transparent transparent;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+ } 
 .btn-1{
     
     background: #013975;

@@ -13,6 +13,9 @@
 
 
 @media screen and (max-width:991px) {
+    .wellness-packages-list {
+        height: 970px;
+    }
     .slick-dots{
         padding-left: 0;
         list-style: none;
@@ -111,17 +114,17 @@
     }
     .wellness-section .nav-button.slick-arrow, .body-checkup-section .nav-button.slick-arrow, .fever-section .nav-button.slick-arrow {
 
-transform: translateY(-50% );
+        transform: translateY(-50% );
 
-bottom: -90px;
+        bottom: -90px;
 
-border-radius: 100px;
+        border-radius: 100px;
 
-right: 35% !important;
+        right: 35% !important;
 
-top: initial;
+        top: initial;
 
-}
+    }
 
     .wellness-section .nav-button.slick-arrow.prev-btn, .body-checkup-section .nav-button.slick-arrow.prev-btn, .fever-section .nav-button.slick-arrow.prev-btn {
         left: 30%;
