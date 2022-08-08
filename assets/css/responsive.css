@@ -18,6 +18,7 @@
         overflow: hidden;
         display: block;
         float: none;
+        margin-bottom: 20px;
     }
     .wellness-packages-list {
         height: 970px;
