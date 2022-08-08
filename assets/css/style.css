@@ -451,7 +451,7 @@ color:#013975;
 .wp-card-head-right {background: #0f9fb4;position: relative;}
 
 .wp-card-head-right img{position: relative;right: -16px;}
-.wp-card-head-right::after{
+/* .wp-card-head-right::after{
     content: "";
     border: 10px solid;
     border-color: #196d78 #196d78 transparent transparent;
@@ -459,7 +459,7 @@ color:#013975;
     right: -19px;
     top: 17px;
     rotate: 270deg;
-}
+} */
 .wellness-section .details-collapse{
     display: none;
     opacity: 0;
@@ -526,7 +526,7 @@ color:#013975;
 }
   .fever-section .bg-clr-sec:not(.wellness-packages-body-sub-head){
   
-    height: 260px;
+    height: 250px;
   }
   .wellness-packages-list{
     border-right: 1px solid #ccc ;

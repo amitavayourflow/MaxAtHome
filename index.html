@@ -4120,30 +4120,13 @@
                   responsive: [
                     {
                       breakpoint: 991,
-                      settings: {
-                        slidesToShow:2,
-                        slidesToScroll: 2,
-                        infinite: true,
-                        
-                       
-                      }
+                      settings: "unslick"
                     },
-                    {
-                      breakpoint: 768,
-                      settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        
-                      }
-                    }
                     
-                   
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
                   ]
                 }
             );
+            $('.body-checkup-section').find('.swiper-slide').addClass('')
             $('.fever-section .swiper-wrapper').slick(
                 {prevArrow: "<div class='nav-button prev-btn'><i class='fas fa-chevron-left'></i></div>", 
                   nextArrow: "<div class='nav-button next-btn'><i class='fas fa-chevron-right'></i></div>",
