@@ -111,7 +111,7 @@
     .header-cal {
         max-width: 20px ;
     }
-    .wellness-title h3, .fever-section h3, .body-checkup-section h3, .why-choose .section-title h3 {
+    /* .wellness-title h3, .fever-section h3, .body-checkup-section h3, .why-choose .section-title h3 {
         color: #fff;
         display: inline-block;
         background: #033d71;
@@ -119,7 +119,7 @@
         font-weight: 400;
         position: relative;
         font-size: 16px;
-    }
+    } */
     .wellness-section .nav-button.slick-arrow, .body-checkup-section .nav-button.slick-arrow, .fever-section .nav-button.slick-arrow {
 
         transform: translateY(-50% );
