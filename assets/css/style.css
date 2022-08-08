@@ -163,8 +163,8 @@ transform: skew(10deg);
 }
 
  .section-banner .first::before,
-    h2::after,
-    h2::before {
+ .section-banner  h2::after,
+ .section-banner  h2::before {
     content: "";
     border: 10px solid;
     border-color: #196d78 #196d78 transparent transparent;
