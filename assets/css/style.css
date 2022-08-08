@@ -369,7 +369,7 @@ color:#013975;
 /* check-up section */
 .check-up {
     background-blend-mode: multiply;
-   
+    background-position: right;
     background-size: cover;
 }
 
