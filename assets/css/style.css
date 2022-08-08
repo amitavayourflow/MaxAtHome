@@ -520,10 +520,23 @@ color:#013975;
     position: relative;
 
 }
-.wellness-section  .bg-clr-sec:not(.wellness-packages-body-sub-head),  .fever-section .bg-clr-sec:not(.wellness-packages-body-sub-head), .body-checkup-section .bg-clr-sec:not(.wellness-packages-body-sub-head){
+  .fever-section .bg-clr-sec:not(.wellness-packages-body-sub-head){
+  
+    height: 260px;
+  }
+  .fever-section .wellness-packages-list {
+    border-right: 1px solid #ccc ;
+    border-left: 1px solid #ccc ;
+    max-height: 500px;
+    height: 250px;
+}
+ .wellness-section .wp-card-head-left.bg-clr-sec {
+    min-height: 120px;
+ }
+  .body-checkup-section .bg-clr-sec:not(.wellness-packages-body-sub-head){
 
   
-    height: 150px;
+    height: auto;
 }
 .fever-section .bg-clr-sec:not(.wellness-packages-body-sub-head), .body-checkup-section .bg-clr-sec:not(.wellness-packages-body-sub-head){
     justify-content: flex-start;
@@ -541,14 +554,22 @@ color:#013975;
     top: 0;
     z-index: -1;
 }
+.wp-card-head-left.dekhabe{
+    padding: 0 !important;
+}
 .wp-card-head-left.dekhabe .details-collapse {
     display: block;
     opacity: 1;
 }
-.wp-card-head-left.dekhabe .details-collapse .wellness-packages-body{
-    padding: 2px;
-    border-radius: 5px;
+.wp-card-head-left.dekhabe .details-collapse .wellness-packages-body {
+    padding: 0;
+    /* border-radius: 5px; */
 }
+.wp-card-head-left.dekhabe .details-collapse .wellness-packages-body .wellness-packages-body-sub-head {
+    border-radius: 0 0;
+}
+
+
 .txt-clr{
     color: #083659;
 }
@@ -636,7 +657,7 @@ margin-right: 20px;
 
 .card-body td:last-child {
     width: 20%;
-    text-align: center;
+
 }
 .card-body td {
     color: #083659;
