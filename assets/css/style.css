@@ -443,7 +443,7 @@ color:#013975;
     text-decoration: underline;
 }
 .wp-card-head-left p {
-    color: white;
+    color: #333;
 }
 
 
@@ -532,6 +532,8 @@ color:#013975;
 }
  .wellness-section .wp-card-head-left.bg-clr-sec {
     min-height: 120px;
+    background: #f4f5f7;
+    justify-content: center !important;
  }
   .body-checkup-section .bg-clr-sec:not(.wellness-packages-body-sub-head){
 
