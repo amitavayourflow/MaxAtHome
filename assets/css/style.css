@@ -562,6 +562,9 @@ color:#013975;
     top: 0;
     z-index: -1;
 }
+.fever-section .wp-card-head-left.dekhabe .details-collapse .wellness-packages-body .wellness-packages-body-sub-head{
+    display: none !important;
+}
 .wp-card-head-left.dekhabe{
     padding: 0 !important;
 }
