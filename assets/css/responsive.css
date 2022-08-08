@@ -111,16 +111,20 @@
     }
     .wellness-section .nav-button.slick-arrow, .body-checkup-section .nav-button.slick-arrow, .fever-section .nav-button.slick-arrow {
 
-        transform: translateY(-50% );
-        top: 108%;
-        border-radius: 100px;
-        right: 40% !important;
-    }
-    .wellness-section .nav-button.slick-arrow{
-        top: 120%;
-    }
+transform: translateY(-50% );
+
+bottom: -90px;
+
+border-radius: 100px;
+
+right: 35% !important;
+
+top: initial;
+
+}
+
     .wellness-section .nav-button.slick-arrow.prev-btn, .body-checkup-section .nav-button.slick-arrow.prev-btn, .fever-section .nav-button.slick-arrow.prev-btn {
-        left:35%
+        left: 30%;
     }
    
     
