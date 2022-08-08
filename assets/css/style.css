@@ -541,11 +541,11 @@ color:#013975;
     top: 0;
     z-index: -1;
 }
-.details-collapse.dekhabe {
+.wp-card-head-left.dekhabe .details-collapse {
     display: block;
     opacity: 1;
 }
-.details-collapse.dekhabe .wellness-packages-body{
+.wp-card-head-left.dekhabe .details-collapse .wellness-packages-body{
     padding: 2px;
     border-radius: 5px;
 }
