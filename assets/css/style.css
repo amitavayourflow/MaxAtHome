@@ -524,9 +524,12 @@ color:#013975;
   
     height: 260px;
   }
-  .fever-section .wellness-packages-list {
+  .wellness-packages-list{
     border-right: 1px solid #ccc ;
     border-left: 1px solid #ccc ;
+  }
+  .fever-section .wellness-packages-list {
+ 
     max-height: 500px;
     height: 250px;
 }
