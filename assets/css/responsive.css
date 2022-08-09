@@ -20,6 +20,16 @@
         float: none;
         margin-bottom: 20px;
     }
+
+    .wellness-title h3, .fever-section h3, .body-checkup-section h3, .why-choose .section-title h3 {
+        color: #fff;
+        display: inline-block;
+        background: #033d71;
+        padding: 5px 15px;
+        font-weight: 400;
+        position: relative;
+        font-size: 18px;
+    }
     .wellness-packages-list {
         height: 970px;
         max-height: initial;
@@ -110,6 +120,10 @@
     }
     .header-cal {
         max-width: 20px ;
+    }
+
+    .mob-nav img{
+        max-width: 35px;
     }
     /* .wellness-title h3, .fever-section h3, .body-checkup-section h3, .why-choose .section-title h3 {
         color: #fff;

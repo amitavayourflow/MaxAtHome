@@ -24,7 +24,7 @@ p, span, h2, h3, h4, h5, h6, li, strong{
     background:#023b73;
 }
 .header-cal {
-    max-width: 35px ;
+    max-width: 20px ;
 }
 
 /* #NAVIGATION
@@ -33,7 +33,7 @@ p, span, h2, h3, h4, h5, h6, li, strong{
 #mainnav {
 
     color: #000;
-    font-weight: bold;
+    font-weight: 500;
     text-transform:uppercase;
     letter-spacing: .05em;
 }
@@ -64,7 +64,7 @@ p, span, h2, h3, h4, h5, h6, li, strong{
     text-decoration: none;
     display: inline-block;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: capitalize;
 }
 
@@ -85,6 +85,18 @@ header.fixed{
 	  padding: 1.5em;
 }
 
+.nav-call{
+    position: relative;
+}
+
+.nav-call img{
+    position: absolute;
+    left: -33px;
+}
+
+.mob-nav img{
+    width: 25px;
+}
 
 /*banner*/
 
@@ -507,7 +519,6 @@ color:#013975;
     border: none;
     border-radius: 4px;
     background: #fff;
-
     font-weight: 700;
     text-decoration: none;
 }
@@ -584,6 +595,7 @@ color:#013975;
 
 .txt-clr{
     color: #083659;
+    font-size: 12px;
 }
 
 .f-13{
@@ -591,7 +603,7 @@ color:#013975;
 }
 
 .f-17{
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .f-18{
