@@ -459,7 +459,11 @@ color:#013975;
 }
 
 
-.wp-card-head-right {background: #0f9fb4;position: relative;}
+.wp-card-head-right {
+    background: #0f9fb4;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
 
 .wp-card-head-right img{position: relative;right: -16px;}
 /* .wp-card-head-right::after{
