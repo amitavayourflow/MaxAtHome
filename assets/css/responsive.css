@@ -11,7 +11,6 @@
 }
 
 
-
 @media screen and (max-width:991px) {
      .body-checkup-section .swiper-slide.slick-slide {
         border-radius: 10px;
@@ -19,6 +18,10 @@
         display: block;
         float: none;
         margin-bottom: 20px;
+    }
+
+    .body-checkup-section .swiper-wrapper .swiper-slide.slick-slide:last-of-type {
+        margin-bottom: 0;
     }
 
     .wellness-title h3, .fever-section h3, .body-checkup-section h3, .why-choose .section-title h3 {
@@ -125,6 +128,7 @@
     .mob-nav img{
         max-width: 35px;
     }
+
     /* .wellness-title h3, .fever-section h3, .body-checkup-section h3, .why-choose .section-title h3 {
         color: #fff;
         display: inline-block;
@@ -134,11 +138,12 @@
         position: relative;
         font-size: 16px;
     } */
+
     .wellness-section .nav-button.slick-arrow, .body-checkup-section .nav-button.slick-arrow, .fever-section .nav-button.slick-arrow {
 
         transform: translateY(-50% );
 
-        bottom: -90px;
+        bottom: -80px;
 
         border-radius: 100px;
 

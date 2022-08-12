@@ -19,16 +19,8 @@
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="shortcut icon" href="assets/img/fav.png" type="image/x-icon">  
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="http://fonts.cdnfonts.com/css/proxima-nova-2?styles=44818,44819,44822,44817,44820,44821,44812,44813" rel="stylesheet">
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="crossorigin">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-
+        
     </head>
 
     <body>
@@ -67,7 +59,7 @@
                            
                             </ul>
                             <div class="d-none d-lg-block nav-call">
-                                <img  class="mr-2 header-cal"   src="assets/img/phone-call-svgrepo-com.svg"  >
+                                <img  class="header-cal"   src="assets/img/phone-call-svgrepo-com.svg"  >
                                 <span class="font-weight-bold f-1 f-sm-1">
                                     <a class="txt-clr header-ph-link" href="tel:01244781006">01244781006</a>
                                 </span>
@@ -2683,7 +2675,7 @@
 
     <!-- =====body-checkup-section===== -->
 
-    <section class="pt-5 py-lg-5 body-checkup-section" id="fbcp">
+    <section class="pt-5 pb-0 body-checkup-section" id="fbcp">
         <div class="container">
             <div class="body-checkup-title text-left">
                 <h3>Full Body-Checkup Profile</h3>
@@ -3445,7 +3437,7 @@
     </section>
 
     <!-- =====fever-section===== -->
-    <section class="py-4 py-lg-5 fever-section" id="fp">
+    <section class="pb-4 pb-lg-5 fever-section" id="fp">
         <div class="container">
             <div class="fever-title text-left">
                 <h3>Fever Profile</h3>
@@ -3857,12 +3849,33 @@
 
     <section class="check-up py-5 mt-5 mt-lg-0"style="background-image: url(assets/img/mar-backrgound.jpg) ;" id="">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 my-auto ">
-                    <div class="checkup-text">
-                        <h2 class="">Now get the comprehensive health check-ups with X-ray, ECG and PFT
-                            along with Blood Tests in the comfort of your home</h2>
+            <div class="checkup-text mb-3">
+                <h2 class="">Now get the comprehensive health check-ups with X-ray, ECG and PFT
+                    along with Blood Tests in the comfort of your home</h2>
+            </div>
+            <div class="align-items-center">
+                <form class="needs-validation" novalidate="novalidate" role="form">
+                    <div class="form-group row">
+                        <div class="col-lg-3"><input class="form-control" name="name" placeholder="Enter Name" required="" type="text" value=""></div>
+
+                        <div class="col-lg-3"><input class="form-control" name="mobile" placeholder="Enter Mobile No." required="" type="text" value=""></div>
+
+                        <div class="col-lg-3">
+                            <div class="custom-select-1 has-success"><select aria-invalid="false" class="form-control" name="hospital" size="0">
+                                    <option disabled="disabled" selected="selected" value="">Select Hospital
+                                    </option>
+                                    <option value="Maringo Asia 1">....</option>
+                                    <option value="Maringo Asia 1">....</option>
+                                </select></div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3"><input class="btn btn-primary btn-modern btn-block cta" data-loading-text="Loading..." type="submit" value="Submit"></div>
                     </div>
+                </form>
+            </div>
+            <!-- <div class="row align-items-center">
+                <div class="col-lg-6 my-auto ">
+                    
                 </div>
                 <div class="col-lg-6  my-auto ">
 
@@ -3872,7 +3885,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
