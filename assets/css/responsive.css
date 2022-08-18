@@ -20,18 +20,36 @@
         margin-bottom: 20px;
     }
 
+    .wp-card-head-right {
+        background: #0f9fb4;
+        position: relative;
+        border-radius: 0 0 8px 8px;
+    }
+
     .body-checkup-section .swiper-wrapper .swiper-slide.slick-slide:last-of-type {
         margin-bottom: 0;
     }
-
+    .wellness-title, .fever-title, .body-checkup-title, .section-title {
+     
+        width: 90%;
+      
+    }
     .wellness-title h3, .fever-section h3, .body-checkup-section h3, .why-choose .section-title h3 {
-        color: #fff;
+        color: #013975;
         display: inline-block;
-        background: #033d71;
-        padding: 5px 15px;
-        font-weight: 400;
+        /* background: #033d71; */
+        padding: 5px 10px;
+        font-weight: 700;
         position: relative;
-        font-size: 18px;
+        font-size: 24px;
+    }
+    .section-title {
+     
+        width: 100%;
+      
+    }
+    .why-choose .section-title h3{
+        padding:5px;
     }
     .wellness-packages-list {
         height: 970px;
@@ -99,19 +117,20 @@
         position: absolute;
         min-height: 100vh;
         z-index: 99;
-        top: -56px;
+        top: 45px;
         right: 0;
-        width: 280px;
-        box-shadow: 0 0 0 999em rgb(0 0 0 / 80%);
+        width: 100vw;
+        /* box-shadow: 0 0 0 999em rgb(0 0 0 / 80%); */
     }
     header.fixed .top-bar{ 
         display: none;
     }
     header.fixed  #mainnav ul {
-        top: -15px;
+        /* top: -15px; */
     }
     #mainnav ul li {
         display: block;
+        border-bottom: 1px solid #001d52;
     }
     #mainnav ul li a {
         display: block;
@@ -139,22 +158,17 @@
         font-size: 16px;
     } */
 
-    .wellness-section .nav-button.slick-arrow, .body-checkup-section .nav-button.slick-arrow, .fever-section .nav-button.slick-arrow {
-
-        transform: translateY(-50% );
-
-        bottom: -80px;
-
-        border-radius: 100px;
-
-        right: 35% !important;
-
-        top: initial;
-
-    }
+    .wellness-section .nav-button.slick-arrow, .body-checkup-section .nav-button.slick-arrow, .fever-section .nav-button.slick-arrow {transform: translateY(-50% );bottom: -80px;border-radius: 100px;right: 0% !important;top: initial;}
 
     .wellness-section .nav-button.slick-arrow.prev-btn, .body-checkup-section .nav-button.slick-arrow.prev-btn, .fever-section .nav-button.slick-arrow.prev-btn {
-        left: 30%;
+        left: 0;
+    }
+    .checkup-text h2 {
+        font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: white;
+    text-align: justify;
     }
    
     
